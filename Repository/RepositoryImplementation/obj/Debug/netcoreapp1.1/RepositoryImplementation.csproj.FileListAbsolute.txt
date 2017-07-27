@@ -1,0 +1,6 @@
+D:\Facultate\Practica\Repo\RepositoryImplementation\bin\Debug\netcoreapp1.1\RepositoryImplementation.deps.json
+D:\Facultate\Practica\Repo\RepositoryImplementation\bin\Debug\netcoreapp1.1\RepositoryImplementation.dll
+D:\Facultate\Practica\Repo\RepositoryImplementation\bin\Debug\netcoreapp1.1\RepositoryImplementation.pdb
+D:\Facultate\Practica\Repo\RepositoryImplementation\obj\Debug\netcoreapp1.1\RepositoryImplementation.AssemblyInfo.cs
+D:\Facultate\Practica\Repo\RepositoryImplementation\obj\Debug\netcoreapp1.1\RepositoryImplementation.dll
+D:\Facultate\Practica\Repo\RepositoryImplementation\obj\Debug\netcoreapp1.1\RepositoryImplementation.pdb

@@ -1,0 +1,57 @@
+﻿@model IEnumerable<RequestWorkflow.Models.Comment>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+@if (User.Identity.IsAuthenticated)
+{
+<p>
+    @Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-danger btn-sm" })
+</p>
+}
+else
+{
+    <p>You have to be authenticated to create a new comment.</p>
+}
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Event.EventName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Author)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Text)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Date)
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Event.EventName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Author)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Text)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Date)
+        </td>
+
+        <td>
+            @*@Html.ActionLink("Edit", "Edit", new { id=item.Id }) |*@
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) 
+            @*@Html.ActionLink("Delete", "Delete", new { id=item.Id }) |*@
+        </td>
+    </tr>
+}
+
+</table>
